@@ -14,15 +14,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
-            👋 Thank you for opening this issue — our support hub received it.
+            👋 Automated Notice — GitHub Interact Team
+This issue has been flagged for closure due to inactivity.
+Our support team at **GitHub Interact** will guide you step by step until the issue is fully resolved.  
 
-            **Quick checklist to speed up the review**
-            1. Add screenshots or links (if any).
-            2. Fill the reproduction steps in the issue body.
-            3. Confirm your browser and OS under _Environment_.
+            For faster help, or would like priority troubleshooting, please contact us at:
+            - email: <mailto:GitHub.interact@gmail.com>
+            - Or Visit the Web Support page: https://git-cryptoresolvehub.web.app/
 
-            For faster help you can also:
-            - Visit the Web Support page: https://git-cryptoresolvehub.web.app/
-            - Or email: <mailto:GitHub.interact@gmail.com>
-
-            We will triage this issue shortly. — *Support Team* 🚀
+            We will triage this issue shortly.
+- GitHub Interact Team 🚀
