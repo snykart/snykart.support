@@ -3,7 +3,10 @@ name: Auto Reply to New Issues
 on:
   issues:
     types: [opened]
-
+    
+permissions:
+  issues: write
+  contents: read
 jobs:
   auto-reply:
     runs-on: ubuntu-latest
