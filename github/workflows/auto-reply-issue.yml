@@ -1,0 +1,28 @@
+name: Auto Reply to New Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-reply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post auto-reply comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            👋 Thank you for opening this issue — our support hub received it.
+
+            **Quick checklist to speed up the review**
+            1. Add screenshots or links (if any).
+            2. Fill the reproduction steps in the issue body.
+            3. Confirm your browser and OS under _Environment_.
+
+            For faster help you can also:
+            - Visit the Web Support page: https://git-cryptoresolvehub.web.app/
+            - Or email: <mailto:GitHub.interact@gmail.com>
+
+            We will triage this issue shortly. — *Support Team* 🚀
